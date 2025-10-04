@@ -1,6 +1,6 @@
+import Heart3Line from "@/icon/Heart3Line";
 import Button from "../components/ui/button";
 import type { Meta, StoryObj } from "@storybook/nextjs";
-import { Heart } from "lucide-react";
 import React from "react";
 
 import { fn } from "storybook/test";
@@ -35,8 +35,8 @@ const meta = {
     onClick: fn(),
     showLeadingIcon: true,
     showTrailingIcon: true,
-    leadingIcon: React.createElement(Heart),
-    trailingIcon: React.createElement(Heart),
+    leadingIcon: React.createElement(Heart3Line),
+    trailingIcon: React.createElement(Heart3Line),
   },
 } satisfies Meta<typeof Button>;
 
