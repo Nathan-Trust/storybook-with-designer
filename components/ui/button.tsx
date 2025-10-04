@@ -8,6 +8,7 @@ interface ButtonProps {
   leadingIcon?: React.ReactNode;
   showLeadingIcon?: boolean;
   trailingIcon?: React.ReactNode;
+  showTrailingIcon?: boolean;
   button?: string;
   variant?: "Solid" | "Outline" | "Ghost";
   onClick?: () => void;
@@ -19,6 +20,7 @@ const Button = ({
   leadingIcon,
   showLeadingIcon = false,
   trailingIcon,
+  showTrailingIcon = false,
   button = "Button",
   variant = "Solid",
   onClick,
@@ -27,7 +29,7 @@ const Button = ({
   const getSizeClasses = () => {
     switch (size) {
       case 1:
-        return "h-8 px-3 rounded-button-small typography-body-xsmall-md ";
+        return "h-8 px-3 rounded-button-small typography-body-xsmall-md";
       case 3:
         return "h-12 px-6 rounded-button-large typography-body-medium-md";
       default: // size 2
@@ -100,7 +102,7 @@ const Button = ({
         </span>
       )}
       <span className="whitespace-nowrap">{button}</span>
-      {trailingIcon && (
+      {showTrailingIcon && trailingIcon && (
         <span className="flex items-center flex-shrink-0 ml-2">
           {trailingIcon}
         </span>

@@ -7,11 +7,12 @@ export default function Home() {
       <Button
         size={2}
         color="Brand"
+        button="Process Order of N12,000"
         // leadingIcon={<Image src="/path/to/icon.svg" alt="Icon" />}
         showLeadingIcon
         // trailingIcon={<Image src="/path/to/icon.svg" alt="Icon" />}
         variant="Solid"
       />
     </main>
-  )
+  );
 }
