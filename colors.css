@@ -159,7 +159,7 @@
     --color-brand-6: #b2deb6; 
     --color-brand-7: #94ce9a; 
     --color-brand-8: #67b973; 
-    --color-brand-default: #0090ff; 
+    --color-brand-default: #46a758; 
     --color-brand-10: #3d9a4f; 
     --color-brand-11: #297e3b; 
     --color-brand-12: #213c24; 
@@ -572,7 +572,7 @@
     --color-info-info-alpha-12: #003463; 
     --color-text-headings: #1e1f24; 
     --color-text-body: #62636c; 
-    --color-text-action: #0090ff; 
+    --color-text-action: #46a758; 
     --color-text-action-hover: #3d9a4f; 
     --color-text-disabled: #b9bbc6; 
     --color-text-information: #0090ff; 
@@ -583,7 +583,7 @@
     --color-icon-strong: #1e1f24; 
     --color-surface-page: #ffffff; 
     --color-surface-primary: #fcfcfd; 
-    --color-surface-action: #0090ff; 
+    --color-surface-action: #46a758; 
     --color-surface-action-alpha: #008619b9; 
     --color-surface-action-hover: #3d9a4f; 
     --color-surface-action-alpha-hover: #007a18c2; 
@@ -596,7 +596,7 @@
     --color-surface-disabled: #eff0f3; 
     --color-surface-disabled-alpha: #00104010; 
     --color-icon-soft: #62636c; 
-    --color-icon-action: #0090ff; 
+    --color-icon-action: #46a758; 
     --color-icon-action-hover: #3d9a4f; 
     --color-icon-disabled: #b9bbc6; 
     --color-icon-information: #0090ff; 
@@ -619,7 +619,7 @@
     --color-border-strong: #b9bbc6; 
     --color-border-error-2: #f5a9a5; 
     --color-border-success-2: #94ce9a; 
-    --color-button-icon-default: #0090ff; 
+    --color-button-icon-default: #46a758; 
     --color-button-icon-default-on-hover-alpha: #007a18c2; 
     --color-button-icon-default-on-hover: #3d9a4f; 
     --color-button-icon-error: #e5484d; 
@@ -629,7 +629,7 @@
     --color-button-icon-default-alpha: #008619b9; 
     --color-button-icon-error-on-hover: #d73840; 
     --color-button-icon-success: #46a758; 
-    --color-button-default: #0090ff; 
+    --color-button-default: #46a758; 
     --color-button-default-alpha: #008619b9; 
     --color-button-icon-neutral: #8b8d98; 
     --color-button-icon-neutral-on-hover: #80828d; 
