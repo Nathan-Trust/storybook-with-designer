@@ -254,5 +254,16 @@
     text-indent: 0px;
   } 
 
+   
+  .typography-body-xsmall-md {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0px;
+    text-indent: 0px;
+  } 
+
 
 }
