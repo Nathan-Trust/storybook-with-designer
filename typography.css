@@ -232,5 +232,27 @@
     text-indent: 0px;
   } 
 
+   
+  .typography-body-sm-md {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: -0.07px;
+    text-indent: 0px;
+  } 
+
+   
+  .typography-body-medium-md {
+    font-family: "Geist";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.08px;
+    text-indent: 0px;
+  } 
+
 
 }
