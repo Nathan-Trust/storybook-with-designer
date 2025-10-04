@@ -47,6 +47,7 @@
     --measure-line-height-paragraph-xxs-line-height: 16px;     
     --measure-paragraph-spacing-paragraph-xxs-paragraph-spacing: 16px;     
     --measure-dimension-scale-150: 6px;     
+    --measure-dimension-h1-font-size-2: 0px;     
     --measure-border-width-border-width-none: 0px;     
     --measure-border-width-border-width-small: 1px;     
     --measure-border-width-border-width-medium: 2px;     
@@ -81,4 +82,5 @@
     --measure-border-radius-border-radius-radius-badges: 4px;     
     --measure-border-radius-border-radius-radius-callouts: 6px;     
     --measure-border-radius-border-radius-radius-review-cards: 0px;     
+    --measure-space-padding-xxl: 16px;     
 }
