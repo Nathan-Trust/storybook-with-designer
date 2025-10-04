@@ -174,7 +174,7 @@ module.exports = {
             '6': '#b2deb6', 
             '7': '#94ce9a', 
             '8': '#67b973', 
-            'default': '#46a758', 
+            'default': '#0090ff', 
             '10': '#3d9a4f', 
             '11': '#297e3b', 
             '12': '#213c24', 
@@ -614,7 +614,7 @@ module.exports = {
         'text': {
             'headings': '#1e1f24', 
             'body': '#62636c', 
-            'action': '#46a758', 
+            'action': '#0090ff', 
             'action-hover': '#3d9a4f', 
             'disabled': '#b9bbc6', 
             'information': '#0090ff', 
@@ -627,7 +627,7 @@ module.exports = {
             'strong': '#1e1f24', 
             'soft': '#62636c', 
             'subtle': '#8b8d98', 
-            'action': '#46a758', 
+            'action': '#0090ff', 
             'action-hover': '#3d9a4f', 
             'disabled': '#b9bbc6', 
             'information': '#0090ff', 
@@ -639,7 +639,7 @@ module.exports = {
         'surface': {
             'page': '#ffffff', 
             'primary': '#fcfcfd', 
-            'action': '#46a758', 
+            'action': '#0090ff', 
             'action-2': '#00c00004', 
             'action-alpha': '#008619b9', 
             'action-hover': '#3d9a4f', 
@@ -669,7 +669,7 @@ module.exports = {
             'action-hover-buttons_': '#cdced7', 
         },
         'button': {
-            'default': '#46a758', 
+            'default': '#0090ff', 
             'default-alpha': '#008619b9', 
             'default-on-hover': '#3d9a4f', 
             'subtle-button': '#00c00004', 
@@ -682,7 +682,7 @@ module.exports = {
             'merchant-default-on-hover': '#eb5d00', 
         },
         'button-icon': {
-            'default': '#46a758', 
+            'default': '#0090ff', 
             'default-on-hover-alpha': '#007a18c2', 
             'default-on-hover': '#3d9a4f', 
             'error': '#e5484d', 
