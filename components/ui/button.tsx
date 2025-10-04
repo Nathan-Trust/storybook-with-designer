@@ -27,11 +27,11 @@ const Button = ({
   const getSizeClasses = () => {
     switch (size) {
       case 1:
-        return "h-8 px-3 rounded-button-small typography-body-small-semibold";
+        return "h-8 px-3 rounded-button-small typography-body-sm-md";
       case 3:
-        return "h-12 px-6 rounded-button-large typography-body-large-semibold";
+        return "h-12 px-6 rounded-button-large typography-body-medium-md";
       default: // size 2
-        return "h-10 px-4 rounded-button typography-body-medium-semibold";
+        return "h-10 px-4 rounded-button typography-body-xsmall-md";
     }
   };
 
