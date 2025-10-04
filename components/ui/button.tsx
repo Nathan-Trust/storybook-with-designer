@@ -23,15 +23,15 @@ const Button = ({
   variant = "Solid",
   onClick,
 }: ButtonProps) => {
-  // Get size-specific classes using clean Tailwind classes
+  // Get size-specific classes using clean Tailwind classes and radius tokens
   const getSizeClasses = () => {
     switch (size) {
       case 1:
-        return "h-8 px-3 rounded-md typography-body-small-semibold";
+        return "h-8 px-3 rounded-button-small typography-body-small-semibold";
       case 3:
-        return "h-12 px-6 rounded-lg typography-body-large-semibold";
+        return "h-12 px-6 rounded-button-large typography-body-large-semibold";
       default: // size 2
-        return "h-10 px-4 rounded-lg typography-body-medium-semibold";
+        return "h-10 px-4 rounded-button typography-body-medium-semibold";
     }
   };
 

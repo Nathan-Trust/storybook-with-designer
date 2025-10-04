@@ -16,6 +16,9 @@ const config: Config = {
       colors: {
         ...tailwindVariables.colors,
       },
+      borderRadius: {
+        ...tailwindVariables.borderRadius,
+      },
       boxShadow: {
         ...tailwindVariables.boxShadow,
       },
