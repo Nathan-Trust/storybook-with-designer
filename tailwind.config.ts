@@ -19,6 +19,12 @@ const config: Config = {
       borderRadius: {
         ...tailwindVariables.borderRadius,
       },
+      height: {
+        ...tailwindVariables.height,
+      },
+      padding: {
+        ...tailwindVariables.padding,
+      },
       boxShadow: {
         ...tailwindVariables.boxShadow,
       },
