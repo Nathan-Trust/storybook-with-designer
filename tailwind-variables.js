@@ -596,7 +596,7 @@ module.exports = {
             '3': '#0074ff16', /* designed for UI component backgrounds.
                                         
                                         Designed for normal states.
-                                        can also be used for hover states if the component has a transparent background */,
+                                        can also be used for hover states if the component has a transparent background */
       4: "#00980725" /* designed for UI component backgrounds.
                                         
                                         Designed for hover states. */,
