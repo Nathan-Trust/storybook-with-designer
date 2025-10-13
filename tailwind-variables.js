@@ -1,5 +1,408 @@
 module.exports = {
     'colors': {
+        'ratings': {
+            'rating-star-active': '#f76b15', 
+            'rating-star-inactive': '#eff0f3', 
+        },
+        'components-modal_': {
+            'surface-background': '#ffffff', 
+            'header-text': '#1e1f24', 
+            'body-text': '#62636c', 
+            'icon-color': '#62636c', 
+        },
+        'components-nav-items_': {
+            'icon-color': '#1e1f24', 
+            'text-color': '#1e1f24', 
+        },
+        'components-tab_': {
+            'outline': '#00073527', 
+        },
+        'components-tab-tab-trigger': {
+            'background-active-hover': '#00991a0a', 
+            'background-default-hover': '#00005506', 
+            'text-default': '#62636c', 
+            'text-default-hover': '#1e1f24', 
+            'text-active': '#213c24', 
+            'color-selector': '#46a758', 
+        },
+        'components-radio-cards_': {
+            'background-default': '#ffffff', 
+            'background-active': '#ffffff', 
+            'text-default': '#1e1f24', 
+            'text-active': '#1e1f24', 
+            'border-default': '#00073527', 
+            'border-active': '#46a758', 
+        },
+        'components-sidebar-item_': {
+            'icon-active': '#46a758', 
+            'icon-inactive': '#62636c', 
+            'text-color': '#62636c', 
+        },
+        'components-product-card_': {
+            'background-surface': '#ffffff', 
+            'heading-text': '#1e1f24', 
+            'body-text': '#62636c', 
+            'price-text': '#46a758', 
+        },
+        'components-badge-error': {
+            'background-error-solid': '#e5484d', 
+            'background-error-soft': '#ff0d0015', 
+            'background-error-outline': '#ffffff', 
+            'background-error-surface': '#ff000008', 
+            'text-error-white': '#ffffff', 
+            'text-error-brand': '#cc2e39', 
+            'icon-error-white': '#ffffff', 
+            'icon-error-brand': '#cc2e39', 
+            'border-error-outline': '#d4090074', 
+            'border-error-surface': '#e30c015a', 
+        },
+        'components-badge-info': {
+            'background-info-solid': '#0090ff', 
+            'background-info-soft': '#0074ff16', 
+            'background-info-outline': '#ffffff', 
+            'background-info-surface': '#008cff0b', 
+            'text-info-white': '#ffffff', 
+            'text-info-brand': '#0073dd', 
+            'icon-info-white': '#ffffff', 
+            'icon-info-brand': '#0073dd', 
+            'border-info-outline': '#006fea91', 
+            'border-info-surface': '#0071f168', 
+        },
+        'components-badge-neutral': {
+            'background-neutral-solid': '#8b8d98', 
+            'background-neutral-soft': '#00104010', 
+            'background-neutral-outline': '#ffffff', 
+            'background-neutral-surface': '#00005506', 
+            'text-neutral-white': '#ffffff', 
+            'text-neutral-brand': '#62636c', 
+            'icon-neutral-white': '#ffffff', 
+            'icon-neutral-brand': '#62636c', 
+            'border-neutral-outline': '#00083046', 
+            'border-neutral-surface': '#00063332', 
+        },
+        'components-badge-success': {
+            'background-success-solid': '#46a758', 
+            'background-success-soft': '#00a70c17', 
+            'background-success-outline': '#ffffff', 
+            'background-success-surface': '#00991a0a', 
+            'text-success-white': '#ffffff', 
+            'text-success-brand': '#297e3b', 
+            'icon-success-white': '#ffffff', 
+            'icon-success-brand': '#297e3b', 
+            'border-success-outline': '#008a1498', 
+            'border-success-surface': '#018b0f6b', 
+        },
+        'components-inputs_': {
+            'background-default-surface': '#00005506', 
+            'background-default-outline': '#ffffff', 
+            'background-active-surface': '#00991a0a', 
+            'background-active-outline': '#ffffff', 
+            'background-filled-surface': '#00104010', 
+            'background-filled-outline': '#ffffff', 
+            'outline-active': '#008a1498', 
+            'outline-filled': '#00073527', 
+            'outline-default': '#00073527', 
+            'text-placeholder': '#8b8d98', 
+            'text-filled': '#1e1f24', 
+            'icon': '#0002119d', 
+            'input-line': '#1e1f24', 
+            'label': '#1e1f24', 
+        },
+        'components-footer_': {
+            'background-surface': '#ffffff', 
+            'text-navitems': '#1e1f24', 
+            'text-label': '#62636c', 
+        },
+        'components-button-button-icon': {
+            'background-primary-solid': '#46a758', 
+            'background-primary-soft': '#e8f7e9', 
+            'background-primary-surface': '#00991a0a', 
+            'outline-primary-surface': '#cdced7', 
+            'outline-primary': '#ffffff', 
+            'background-accent-solid': '#ffffff', 
+            'background-accent-soft': '#ffffff', 
+            'background-accent-surface': '#ffffff', 
+            'outline-accent-surface': '#ffffff', 
+            'outline-accent': '#ffffff', 
+            'background-neutral-solid': '#ffffff', 
+            'background-neutral-soft': '#ffffff', 
+            'background-neutral-surface': '#ffffff', 
+            'outline-neutral-surface': '#ffffff', 
+            'outline-neutral': '#ffffff', 
+        },
+        'components-button-button-icon-on-hover': {
+            'background-primary-solid': '#46a758', 
+            'background-primary-soft': '#e8f7e9', 
+            'background-primary-surface': '#00991a0a', 
+            'outline-primary-surface': '#cdced7', 
+            'outline-primary': '#ffffff', 
+            'background-accent-solid': '#ffffff', 
+            'background-accent-soft': '#ffffff', 
+            'background-accent-surface': '#ffffff', 
+            'outline-accent-surface': '#ffffff', 
+            'outline-accent': '#ffffff', 
+            'background-neutral-solid': '#ffffff', 
+            'background-neutral-soft': '#ffffff', 
+            'background-neutral-surface': '#ffffff', 
+            'outline-neutral-surface': '#ffffff', 
+            'outline-neutral': '#ffffff', 
+        },
+        'components-button-brand': {
+            'background-brand-solid': '#46a758', 
+            'color-text-solid': '#ffffff', 
+            'border-brand-outline': '#b9bbc6', 
+            'color-text-outline': '#62636c', 
+            'background-brand-ghost': '#ffffff', 
+            'color-text-ghost': '#62636c', 
+            'icon-brand-solid': '#ffffff', 
+            'icon-brand-outline': '#46a758', 
+            'icon-brand-ghost': '#46a758', 
+        },
+        'components-button-accent': {
+            'background-accent-solid': '#f76b15', 
+            'color-text-solid': '#ffffff', 
+            'border-accent-outline': '#b9bbc6', 
+            'color-text-outline': '#62636c', 
+            'background-accent-ghost': '#ffffff', 
+            'color-text-ghost': '#62636c', 
+            'icon-accent-solid': '#ffffff', 
+            'icon-accent-outline': '#f76b15', 
+            'icon-accent-ghost': '#f76b15', 
+        },
+        'components-button-neutral': {
+            'background-neutral-solid': '#8b8d98', 
+            'color-text-solid': '#ffffff', 
+            'background-neutral-outline': '#ffffff', 
+            'color-text-outline': '#62636c', 
+            'border-neutral-outline': '#00083046', 
+            'color-text-ghost': '#62636c', 
+            'icon-neutral-solid': '#ffffff', 
+            'icon-neutral-outline': '#62636c', 
+            'icon-neutral-ghost': '#62636c', 
+        },
+        'components-button-error': {
+            'background-error-solid': '#e5484d', 
+            'color-text-solid': '#ffffff', 
+            'border-error-outline': '#e30c015a', 
+            'color-text-outline': '#e5484d', 
+            'background-error-ghost': '#ffffff', 
+            'color-text-ghost': '#e5484d', 
+            'icon-error-solid': '#ffffff', 
+            'icon-error-outline': '#e5484d', 
+            'icon-error-ghost': '#e5484d', 
+        },
+        'components-cart-button-neutral': {
+            'surface-neutral': '#00000000', 
+            'border-neutral': '#00063332', 
+            'text-neutral': '#62636c', 
+            'icon-neutral': '#62636c', 
+            'surface-counter': '#00104010', 
+        },
+        'components-cart-button-primary': {
+            'surface-primary': '#00c00004', 
+            'border-primary': '#018b0f6b', 
+            'text-primary': '#297e3b', 
+            'icon-primary': '#46a758', 
+            'surface-counter-primary': '#00a70c17', 
+        },
+        'components-review-card_': {
+            'rating-star-active': '#f76b15', 
+            'rating-star-inactive': '#eff0f3', 
+            'background-surface': '#ffffff', 
+        },
+        'components-select-trigger_': {
+            'background-default': '#00005506', 
+            'background-filled': '#00005506', 
+            'background-disabled': '#00104010', 
+            'text-default': '#62636c', 
+            'text-filled': '#1e1f24', 
+            'text-readonly': '#8b8d98', 
+            'icon-default': '#62636c', 
+            'icon-disabled': '#8b8d98', 
+            'icon-filled': '#1e1f24', 
+        },
+        'components-callout-information': {
+            'background-information': '#0074ff16', 
+            'outline-information': '#0074ff16', 
+            'text-information': '#1e1f24', 
+            'header-text-information': '#1e1f24', 
+            'icon-information': '#62636c', 
+        },
+        'components-callout-neutral': {
+            'background-neutral': '#00005506', 
+            'outline-neutral': '#00104010', 
+            'text-neutral': '#62636c', 
+            'header-text-neutral': '#1e1f24', 
+            'icon-neutral': '#62636c', 
+        },
+        'components-callout-error': {
+            'background-error': '#ff0d0015', 
+            'outline-error': '#ff150026', 
+            'text-error': '#1e1f24', 
+            'header-text-error': '#cc2e39', 
+            'icon-error': '#cc2e39', 
+        },
+        'blue-alpha': {
+            '1': '#0080ff04', 
+            '2': '#008cff0b', 
+            '3': '#0074ff16', 
+            '4': '#0087ff26', 
+            '5': '#0080ff38', 
+            '6': '#0078ff4d', 
+            '7': '#0071f168', 
+            '8': '#006fea91', 
+            'default': '#0090ff', 
+            '10': '#0084ec', 
+            '11': '#0073dd', 
+            '12': '#003463', 
+        },
+        'orange-alpha': {
+            '1': '#c0400004', 
+            '2': '#ff55000f', 
+            '3': '#ff620022', 
+            '4': '#ff5e003f', 
+            '5': '#ff5d0053', 
+            '6': '#ff5a016a', 
+            '7': '#f94e007d', 
+            '8': '#e84a009c', 
+            'default': '#f65e00ea', 
+            '10': '#eb5d00', 
+            '11': '#d24d00', 
+            '12': '#441600e5', 
+        },
+        'red': {
+            '1': '#fffcfc', 
+            '2': '#fff7f7', 
+            '3': '#ffebea', 
+            '4': '#ffdcd9', 
+            '5': '#ffcdca', 
+            '6': '#febdb9', 
+            '7': '#f5a9a5', 
+            '8': '#eb8f8b', 
+            'default': '#e5484d', 
+            '10': '#d73840', 
+            '11': '#cc2e39', 
+            '12': '#64181b', 
+        },
+        'red-alpha': {
+            '1': '#ff000003', 
+            '2': '#ff000008', 
+            '3': '#ff0d0015', 
+            '4': '#ff150026', 
+            '5': '#ff0f0035', 
+            '6': '#fc0f0046', 
+            '7': '#e30c015a', 
+            '8': '#d4090074', 
+            'default': '#db0007b7', 
+            '10': '#cc000ac7', 
+            '11': '#c1000ed1', 
+            '12': '#540003e7', 
+        },
+        'info': {
+            '1': '#fbfdff', /* Designed for app backgrounds and subtle component backgrounds. .
+                                        
+                                        Appropriate applications include:
+                                        
+                                        Main app background
+                                        Striped table background
+                                        Code block background
+                                        Card background
+                                        Sidebar background
+                                        Canvas area background */
+            '2': '#f4faff', /* Designed for app backgrounds and subtle component backgrounds. .
+                                        
+                                        Appropriate applications include:
+                                        
+                                        Main app background
+                                        Striped table background
+                                        Code block background
+                                        Card background
+                                        Sidebar background
+                                        Canvas area background */
+            '3': '#e9f3ff', /* designed for UI component backgrounds.
+                                        
+                                        Designed for normal states.
+                                        can also be used for hover states if the component has a transparent background */
+            '4': '#d9edff', /* designed for UI component backgrounds.
+                                        
+                                        Designed for hover states. */
+            '5': '#c7e3ff', /* designed for UI component backgrounds.
+                                        
+                                        Designed for pressed or selected states. */
+            '6': '#b2d6ff', 
+            '7': '#97c5f9', 
+            '8': '#6eadf3', 
+            'default': '#0090ff', 
+            '10': '#0084ec', 
+            '11': '#0073dd', 
+            '12': '#003463', 
+        },
+        'info-info-alpha': {
+            '1': '#0080ff04', /* Designed for app backgrounds and subtle component backgrounds. .
+                                        
+                                        Appropriate applications include:
+                                        
+                                        Main app background
+                                        Striped table background
+                                        Code block background
+                                        Card background
+                                        Sidebar background
+                                        Canvas area background */
+            '2': '#008cff0b', /* Designed for app backgrounds and subtle component backgrounds. .
+                                        
+                                        Appropriate applications include:
+                                        
+                                        Main app background
+                                        Striped table background
+                                        Code block background
+                                        Card background
+                                        Sidebar background
+                                        Canvas area background */
+            '3': '#0074ff16', /* designed for UI component backgrounds.
+                                        
+                                        Designed for normal states.
+                                        can also be used for hover states if the component has a transparent background */
+            '4': '#0087ff26', /* designed for UI component backgrounds.
+                                        
+                                        Designed for hover states. */
+            '5': '#0080ff38', /* designed for UI component backgrounds.
+                                        
+                                        Designed for pressed or selected states. */
+            '6': '#0078ff4d', 
+            '7': '#0071f168', 
+            '8': '#006fea91', 
+            'default': '#0090ff', 
+            '10': '#0084ec', 
+            '11': '#0073dd', 
+            '12': '#003463', 
+        },
+        'button': {
+            'default-alpha': '#008619b9', 
+            'default': '#46a758', 
+            'default-on-hover': '#3d9a4f', 
+            'subtle-button': '#00c00004', 
+            'default-on-hover-alpha': '#007a18c2', 
+            'error': '#e5484d', 
+            'error-on-hover': '#d73840', 
+            'success': '#46a758', 
+            'success-on-hover': '#3d9a4f', 
+            'merchant-default': '#f76b15', 
+            'merchant-default-on-hover': '#eb5d00', 
+        },
+        'button-icon': {
+            'default-on-hover-alpha': '#007a18c2', 
+            'error-on-hover': '#d73840', 
+            'merchant-default-on-hover': '#eb5d00', 
+            'error': '#e5484d', 
+            'merchant-default': '#f76b15', 
+            'default-alpha': '#008619b9', 
+            'default-on-hover': '#3d9a4f', 
+            'success': '#46a758', 
+            'success-on-hover': '#3d9a4f', 
+            'default': '#46a758', 
+            'neutral': '#8b8d98', 
+            'neutral-on-hover': '#80828d', 
+        },
         'brand': {
             '1': '#fbfefb', /* Designed for app backgrounds and subtle component backgrounds. .
                                         
@@ -448,409 +851,6 @@ module.exports = {
             '10': '#007a18c2', 
             '11': '#006516d6', 
             '12': '#001f04de', 
-        },
-        'ratings': {
-            'rating-star-active': '#f76b15', 
-            'rating-star-inactive': '#eff0f3', 
-        },
-        'components-modal_': {
-            'surface-background': '#ffffff', 
-            'header-text': '#1e1f24', 
-            'body-text': '#62636c', 
-            'icon-color': '#62636c', 
-        },
-        'components-nav-items_': {
-            'icon-color': '#1e1f24', 
-            'text-color': '#1e1f24', 
-        },
-        'components-tab_': {
-            'outline': '#00073527', 
-        },
-        'components-tab-tab-trigger': {
-            'background-active-hover': '#00991a0a', 
-            'background-default-hover': '#00005506', 
-            'text-default': '#62636c', 
-            'text-default-hover': '#1e1f24', 
-            'text-active': '#213c24', 
-            'color-selector': '#46a758', 
-        },
-        'components-radio-cards_': {
-            'background-default': '#ffffff', 
-            'background-active': '#ffffff', 
-            'text-default': '#1e1f24', 
-            'text-active': '#1e1f24', 
-            'border-default': '#00073527', 
-            'border-active': '#46a758', 
-        },
-        'components-sidebar-item_': {
-            'icon-active': '#46a758', 
-            'icon-inactive': '#62636c', 
-            'text-color': '#62636c', 
-        },
-        'components-product-card_': {
-            'background-surface': '#ffffff', 
-            'heading-text': '#1e1f24', 
-            'body-text': '#62636c', 
-            'price-text': '#46a758', 
-        },
-        'components-badge-error': {
-            'background-error-solid': '#e5484d', 
-            'background-error-soft': '#ff0d0015', 
-            'background-error-outline': '#ffffff', 
-            'background-error-surface': '#ff000008', 
-            'text-error-white': '#ffffff', 
-            'text-error-brand': '#cc2e39', 
-            'icon-error-white': '#ffffff', 
-            'icon-error-brand': '#cc2e39', 
-            'border-error-outline': '#d4090074', 
-            'border-error-surface': '#e30c015a', 
-        },
-        'components-badge-info': {
-            'background-info-solid': '#0090ff', 
-            'background-info-soft': '#0074ff16', 
-            'background-info-outline': '#ffffff', 
-            'background-info-surface': '#008cff0b', 
-            'text-info-white': '#ffffff', 
-            'text-info-brand': '#0073dd', 
-            'icon-info-white': '#ffffff', 
-            'icon-info-brand': '#0073dd', 
-            'border-info-outline': '#006fea91', 
-            'border-info-surface': '#0071f168', 
-        },
-        'components-badge-neutral': {
-            'background-neutral-solid': '#8b8d98', 
-            'background-neutral-soft': '#00104010', 
-            'background-neutral-outline': '#ffffff', 
-            'background-neutral-surface': '#00005506', 
-            'text-neutral-white': '#ffffff', 
-            'text-neutral-brand': '#62636c', 
-            'icon-neutral-white': '#ffffff', 
-            'icon-neutral-brand': '#62636c', 
-            'border-neutral-outline': '#00083046', 
-            'border-neutral-surface': '#00063332', 
-        },
-        'components-badge-success': {
-            'background-success-solid': '#46a758', 
-            'background-success-soft': '#00a70c17', 
-            'background-success-outline': '#ffffff', 
-            'background-success-surface': '#00991a0a', 
-            'text-success-white': '#ffffff', 
-            'text-success-brand': '#297e3b', 
-            'icon-success-white': '#ffffff', 
-            'icon-success-brand': '#297e3b', 
-            'border-success-outline': '#008a1498', 
-            'border-success-surface': '#018b0f6b', 
-        },
-        'components-inputs_': {
-            'background-default-surface': '#00005506', 
-            'background-default-outline': '#ffffff', 
-            'background-active-surface': '#00991a0a', 
-            'background-active-outline': '#ffffff', 
-            'background-filled-surface': '#00104010', 
-            'background-filled-outline': '#ffffff', 
-            'outline-active': '#008a1498', 
-            'outline-filled': '#00073527', 
-            'outline-default': '#00073527', 
-            'text-placeholder': '#8b8d98', 
-            'text-filled': '#1e1f24', 
-            'icon': '#0002119d', 
-            'input-line': '#1e1f24', 
-            'label': '#1e1f24', 
-        },
-        'components-footer_': {
-            'background-surface': '#ffffff', 
-            'text-navitems': '#1e1f24', 
-            'text-label': '#62636c', 
-        },
-        'components-button-button-icon': {
-            'background-primary-solid': '#46a758', 
-            'background-primary-soft': '#e8f7e9', 
-            'background-primary-surface': '#00991a0a', 
-            'outline-primary-surface': '#cdced7', 
-            'outline-primary': '#ffffff', 
-            'background-accent-solid': '#ffffff', 
-            'background-accent-soft': '#ffffff', 
-            'background-accent-surface': '#ffffff', 
-            'outline-accent-surface': '#ffffff', 
-            'outline-accent': '#ffffff', 
-            'background-neutral-solid': '#ffffff', 
-            'background-neutral-soft': '#ffffff', 
-            'background-neutral-surface': '#ffffff', 
-            'outline-neutral-surface': '#ffffff', 
-            'outline-neutral': '#ffffff', 
-        },
-        'components-button-button-icon-on-hover': {
-            'background-primary-solid': '#46a758', 
-            'background-primary-soft': '#e8f7e9', 
-            'background-primary-surface': '#00991a0a', 
-            'outline-primary-surface': '#cdced7', 
-            'outline-primary': '#ffffff', 
-            'background-accent-solid': '#ffffff', 
-            'background-accent-soft': '#ffffff', 
-            'background-accent-surface': '#ffffff', 
-            'outline-accent-surface': '#ffffff', 
-            'outline-accent': '#ffffff', 
-            'background-neutral-solid': '#ffffff', 
-            'background-neutral-soft': '#ffffff', 
-            'background-neutral-surface': '#ffffff', 
-            'outline-neutral-surface': '#ffffff', 
-            'outline-neutral': '#ffffff', 
-        },
-        'components-button-brand': {
-            'background-brand-solid': '#46a758', 
-            'color-text-solid': '#ffffff', 
-            'border-brand-outline': '#b9bbc6', 
-            'color-text-outline': '#62636c', 
-            'background-brand-ghost': '#ffffff', 
-            'color-text-ghost': '#62636c', 
-            'icon-brand-solid': '#ffffff', 
-            'icon-brand-outline': '#46a758', 
-            'icon-brand-ghost': '#46a758', 
-        },
-        'components-button-accent': {
-            'background-accent-solid': '#f76b15', 
-            'color-text-solid': '#ffffff', 
-            'border-accent-outline': '#b9bbc6', 
-            'color-text-outline': '#62636c', 
-            'background-accent-ghost': '#ffffff', 
-            'color-text-ghost': '#62636c', 
-            'icon-accent-solid': '#ffffff', 
-            'icon-accent-outline': '#f76b15', 
-            'icon-accent-ghost': '#f76b15', 
-        },
-        'components-button-neutral': {
-            'background-neutral-solid': '#8b8d98', 
-            'color-text-solid': '#ffffff', 
-            'background-neutral-outline': '#ffffff', 
-            'color-text-outline': '#62636c', 
-            'border-neutral-outline': '#00083046', 
-            'color-text-ghost': '#62636c', 
-            'icon-neutral-solid': '#ffffff', 
-            'icon-neutral-outline': '#62636c', 
-            'icon-neutral-ghost': '#62636c', 
-        },
-        'components-button-error': {
-            'background-error-solid': '#e5484d', 
-            'color-text-solid': '#ffffff', 
-            'border-error-outline': '#e30c015a', 
-            'color-text-outline': '#e5484d', 
-            'background-error-ghost': '#ffffff', 
-            'color-text-ghost': '#e5484d', 
-            'icon-error-solid': '#ffffff', 
-            'icon-error-outline': '#e5484d', 
-            'icon-error-ghost': '#e5484d', 
-        },
-        'components-cart-button-neutral': {
-            'surface-neutral': '#00000000', 
-            'border-neutral': '#00063332', 
-            'text-neutral': '#62636c', 
-            'icon-neutral': '#62636c', 
-            'surface-counter': '#00104010', 
-        },
-        'components-cart-button-primary': {
-            'surface-primary': '#00c00004', 
-            'border-primary': '#018b0f6b', 
-            'text-primary': '#297e3b', 
-            'icon-primary': '#46a758', 
-            'surface-counter-primary': '#00a70c17', 
-        },
-        'components-review-card_': {
-            'rating-star-active': '#f76b15', 
-            'rating-star-inactive': '#eff0f3', 
-            'background-surface': '#ffffff', 
-        },
-        'components-select-trigger_': {
-            'background-default': '#00005506', 
-            'background-filled': '#00005506', 
-            'background-disabled': '#00104010', 
-            'text-default': '#62636c', 
-            'text-filled': '#1e1f24', 
-            'text-readonly': '#8b8d98', 
-            'icon-default': '#62636c', 
-            'icon-disabled': '#8b8d98', 
-            'icon-filled': '#1e1f24', 
-        },
-        'components-callout-information': {
-            'background-information': '#0074ff16', 
-            'outline-information': '#0074ff16', 
-            'text-information': '#1e1f24', 
-            'header-text-information': '#1e1f24', 
-            'icon-information': '#62636c', 
-        },
-        'components-callout-neutral': {
-            'background-neutral': '#00005506', 
-            'outline-neutral': '#00104010', 
-            'text-neutral': '#62636c', 
-            'header-text-neutral': '#1e1f24', 
-            'icon-neutral': '#62636c', 
-        },
-        'components-callout-error': {
-            'background-error': '#ff0d0015', 
-            'outline-error': '#ff150026', 
-            'text-error': '#1e1f24', 
-            'header-text-error': '#cc2e39', 
-            'icon-error': '#cc2e39', 
-        },
-        'blue-alpha': {
-            '1': '#0080ff04', 
-            '2': '#008cff0b', 
-            '3': '#0074ff16', 
-            '4': '#0087ff26', 
-            '5': '#0080ff38', 
-            '6': '#0078ff4d', 
-            '7': '#0071f168', 
-            '8': '#006fea91', 
-            'default': '#0090ff', 
-            '10': '#0084ec', 
-            '11': '#0073dd', 
-            '12': '#003463', 
-        },
-        'orange-alpha': {
-            '1': '#c0400004', 
-            '2': '#ff55000f', 
-            '3': '#ff620022', 
-            '4': '#ff5e003f', 
-            '5': '#ff5d0053', 
-            '6': '#ff5a016a', 
-            '7': '#f94e007d', 
-            '8': '#e84a009c', 
-            'default': '#f65e00ea', 
-            '10': '#eb5d00', 
-            '11': '#d24d00', 
-            '12': '#441600e5', 
-        },
-        'red': {
-            '1': '#fffcfc', 
-            '2': '#fff7f7', 
-            '3': '#ffebea', 
-            '4': '#ffdcd9', 
-            '5': '#ffcdca', 
-            '6': '#febdb9', 
-            '7': '#f5a9a5', 
-            '8': '#eb8f8b', 
-            'default': '#e5484d', 
-            '10': '#d73840', 
-            '11': '#cc2e39', 
-            '12': '#64181b', 
-        },
-        'red-alpha': {
-            '1': '#ff000003', 
-            '2': '#ff000008', 
-            '3': '#ff0d0015', 
-            '4': '#ff150026', 
-            '5': '#ff0f0035', 
-            '6': '#fc0f0046', 
-            '7': '#e30c015a', 
-            '8': '#d4090074', 
-            'default': '#db0007b7', 
-            '10': '#cc000ac7', 
-            '11': '#c1000ed1', 
-            '12': '#540003e7', 
-        },
-        'info': {
-            '1': '#fbfdff', /* Designed for app backgrounds and subtle component backgrounds. .
-                                        
-                                        Appropriate applications include:
-                                        
-                                        Main app background
-                                        Striped table background
-                                        Code block background
-                                        Card background
-                                        Sidebar background
-                                        Canvas area background */
-            '2': '#f4faff', /* Designed for app backgrounds and subtle component backgrounds. .
-                                        
-                                        Appropriate applications include:
-                                        
-                                        Main app background
-                                        Striped table background
-                                        Code block background
-                                        Card background
-                                        Sidebar background
-                                        Canvas area background */
-            '3': '#e9f3ff', /* designed for UI component backgrounds.
-                                        
-                                        Designed for normal states.
-                                        can also be used for hover states if the component has a transparent background */
-            '4': '#d9edff', /* designed for UI component backgrounds.
-                                        
-                                        Designed for hover states. */
-            '5': '#c7e3ff', /* designed for UI component backgrounds.
-                                        
-                                        Designed for pressed or selected states. */
-            '6': '#b2d6ff', 
-            '7': '#97c5f9', 
-            '8': '#6eadf3', 
-            'default': '#0090ff', 
-            '10': '#0084ec', 
-            '11': '#0073dd', 
-            '12': '#003463', 
-        },
-        'info-info-alpha': {
-            '1': '#0080ff04', /* Designed for app backgrounds and subtle component backgrounds. .
-                                        
-                                        Appropriate applications include:
-                                        
-                                        Main app background
-                                        Striped table background
-                                        Code block background
-                                        Card background
-                                        Sidebar background
-                                        Canvas area background */
-            '2': '#008cff0b', /* Designed for app backgrounds and subtle component backgrounds. .
-                                        
-                                        Appropriate applications include:
-                                        
-                                        Main app background
-                                        Striped table background
-                                        Code block background
-                                        Card background
-                                        Sidebar background
-                                        Canvas area background */
-            '3': '#0074ff16', /* designed for UI component backgrounds.
-                                        
-                                        Designed for normal states.
-                                        can also be used for hover states if the component has a transparent background */
-            '4': '#0087ff26', /* designed for UI component backgrounds.
-                                        
-                                        Designed for hover states. */
-            '5': '#0080ff38', /* designed for UI component backgrounds.
-                                        
-                                        Designed for pressed or selected states. */
-            '6': '#0078ff4d', 
-            '7': '#0071f168', 
-            '8': '#006fea91', 
-            'default': '#0090ff', 
-            '10': '#0084ec', 
-            '11': '#0073dd', 
-            '12': '#003463', 
-        },
-        'button': {
-            'default-alpha': '#008619b9', 
-            'default': '#46a758', 
-            'default-on-hover': '#3d9a4f', 
-            'subtle-button': '#00c00004', 
-            'default-on-hover-alpha': '#007a18c2', 
-            'error': '#e5484d', 
-            'error-on-hover': '#d73840', 
-            'success': '#46a758', 
-            'success-on-hover': '#3d9a4f', 
-            'merchant-default': '#f76b15', 
-            'merchant-default-on-hover': '#eb5d00', 
-        },
-        'button-icon': {
-            'default-on-hover-alpha': '#007a18c2', 
-            'error-on-hover': '#d73840', 
-            'merchant-default-on-hover': '#eb5d00', 
-            'error': '#e5484d', 
-            'merchant-default': '#f76b15', 
-            'default-alpha': '#008619b9', 
-            'default-on-hover': '#3d9a4f', 
-            'success': '#46a758', 
-            'success-on-hover': '#3d9a4f', 
-            'default': '#46a758', 
-            'neutral': '#8b8d98', 
-            'neutral-on-hover': '#80828d', 
         },
         'orange': {
             '1': '#fefcfb', 
