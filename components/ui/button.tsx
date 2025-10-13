@@ -34,22 +34,22 @@ const Button = ({
           paddingLeft: "var(--measure-dimension-scale-300, 12px)",
           paddingRight: "var(--measure-dimension-scale-300, 12px)",
           borderRadius:
-            "var(--measure-border-radius-border-radius-radius-inputs, 4px)",
+            "var(--measure-border-radius-border-radius-medium, 4px)",
         };
       case 3:
         return {
           height: "calc(var(--measure-dimension-scale-600, 24px) * 2)",
           paddingLeft: "var(--measure-dimension-scale-600, 24px)",
           paddingRight: "var(--measure-dimension-scale-600, 24px)",
-          borderRadius: "var(--measure-border-radius-border-radius-large, 8px)",
+          borderRadius:
+            "var(--measure-border-radius-border-radius-radius-button, 6px)",
         };
       default: // size 2
         return {
           height: "var(--measure-dimension-scale-900, 40px)",
           paddingLeft: "var(--measure-dimension-scale-400, 16px)",
           paddingRight: "var(--measure-dimension-scale-400, 16px)",
-          borderRadius:
-            "var(--measure-border-radius-border-radius-radius-button, 6px)",
+          borderRadius: "var(--measure-border-radius-border-radius-large, 8px)",
         };
     }
   };
@@ -74,7 +74,10 @@ const Button = ({
       case "Solid":
         switch (colorKey) {
           case "brand":
-            return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border-components-button-brand-background-brand-solid hover:bg-brand-10 hover:border-brand-10";
+            return (
+              "text-white border border-transparent hover:opacity-90 active:opacity-80" +
+              " bg-[var(--color-green-default,#46a758)]"
+            );
           case "accent":
             return "bg-components-button-accent-background-accent-solid text-components-button-accent-color-text-solid border-components-button-accent-background-accent-solid hover:bg-orange-10 hover:border-orange-10";
           case "error":
@@ -82,13 +85,19 @@ const Button = ({
           case "neutral":
             return "bg-components-button-neutral-background-neutral-solid text-components-button-neutral-color-text-solid border-components-button-neutral-background-neutral-solid hover:bg-gray-10 hover:border-gray-10";
           default:
-            return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border-components-button-brand-background-brand-solid";
+            return (
+              "text-white border border-transparent hover:opacity-90 active:opacity-80" +
+              " bg-[var(--color-green-default,#46a758)]"
+            );
         }
 
       case "Outline":
         switch (colorKey) {
           case "brand":
-            return "bg-components-button-brand-background-brand-outline text-components-button-brand-color-text-outline border-components-button-brand-border-brand-outline hover:bg-brand-3 hover:text-brand-11";
+            return (
+              "bg-transparent border hover:bg-[var(--color-green-3,#e8f7e9)]" +
+              " text-[var(--color-green-default,#46a758)] border-[var(--color-green-default,#46a758)]"
+            );
           case "accent":
             return "bg-components-button-accent-background-accent-outline text-components-button-accent-color-text-outline border-components-button-accent-border-accent-outline hover:bg-orange-3 hover:text-orange-11";
           case "error":
@@ -96,13 +105,19 @@ const Button = ({
           case "neutral":
             return "bg-components-button-neutral-background-neutral-outline text-components-button-neutral-color-text-outline border-components-button-neutral-border-neutral-outline hover:bg-gray-3 hover:text-gray-11";
           default:
-            return "bg-components-button-brand-background-brand-outline text-components-button-brand-color-text-outline border-components-button-brand-border-brand-outline";
+            return (
+              "bg-transparent border hover:bg-[var(--color-green-3,#e8f7e9)]" +
+              " text-[var(--color-green-default,#46a758)] border-[var(--color-green-default,#46a758)]"
+            );
         }
 
       case "Ghost":
         switch (colorKey) {
           case "brand":
-            return "bg-components-button-brand-background-brand-ghost text-components-button-brand-color-text-ghost border-transparent hover:bg-brand-3 hover:text-brand-11";
+            return (
+              "bg-transparent border-transparent hover:bg-[var(--color-green-3,#e8f7e9)]" +
+              " text-[var(--color-green-default,#46a758)]"
+            );
           case "accent":
             return "bg-components-button-accent-background-accent-ghost text-components-button-accent-color-text-ghost border-transparent hover:bg-orange-3 hover:text-orange-11";
           case "error":
@@ -110,16 +125,22 @@ const Button = ({
           case "neutral":
             return "bg-components-button-neutral-background-neutral-outline text-components-button-neutral-color-text-ghost border-transparent hover:bg-gray-3 hover:text-gray-11";
           default:
-            return "bg-components-button-brand-background-brand-ghost text-components-button-brand-color-text-ghost border-transparent";
+            return (
+              "bg-transparent border-transparent hover:bg-[var(--color-green-3,#e8f7e9)]" +
+              " text-[var(--color-green-default,#46a758)]"
+            );
         }
 
       default:
-        return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border-components-button-brand-background-brand-solid";
+        return (
+          "text-white border border-transparent hover:opacity-90 active:opacity-80" +
+          " bg-[var(--color-green-default,#46a758)]"
+        );
     }
   };
 
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 font-medium leading-none border outline-none transition-all duration-200 ease-in-out cursor-pointer focus-visible:outline-2 focus-visible:outline-brand-default focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:translate-y-0.5";
+    "inline-flex items-center justify-center gap-2 font-medium leading-none border outline-none transition-all duration-200 ease-in-out cursor-pointer focus-visible:outline-2 focus-visible:outline-[var(--color-green-default,#46a758)] focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:translate-y-0.5";
 
   const buttonClasses = `${baseClasses} ${getTypographyClass()} ${getColorVariantClasses()}`;
   const sizeStyles = getSizeStyles();
@@ -127,15 +148,11 @@ const Button = ({
   return (
     <button className={buttonClasses} style={sizeStyles} onClick={onClick}>
       {showLeadingIcon && leadingIcon && (
-        <span className="flex items-center flex-shrink-0 mr-2">
-          {leadingIcon}
-        </span>
+        <span className="flex items-center flex-shrink-0">{leadingIcon}</span>
       )}
       <span className="whitespace-nowrap">{button}</span>
       {showTrailingIcon && trailingIcon && (
-        <span className="flex items-center flex-shrink-0 ml-2">
-          {trailingIcon}
-        </span>
+        <span className="flex items-center flex-shrink-0">{trailingIcon}</span>
       )}
     </button>
   );
