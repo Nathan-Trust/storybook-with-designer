@@ -83,4 +83,6 @@
     --measure-border-radius-border-radius-radius-callouts: 6px;     
     --measure-border-radius-border-radius-radius-review-cards: 0px;     
     --measure-space-padding-xxl: 16px;     
+    --measure-space-gap-2xl: 16px;     
+    --measure-space-gap-3xl: 20px;     
 }
