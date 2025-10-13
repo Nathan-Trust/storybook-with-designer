@@ -953,7 +953,7 @@ module.exports = {
     xl: "16px",
     "2xl": "24px",
     full: "9999px",
-    button: "var(--Border-radius-radius-button, 6px)", // Button radius from Supernova export
+    button: "var(--measure-border-radius-border-radius-radius-button, 6px)", // Button radius from measures.css
     "button-small":
       "var(--measure-border-radius-border-radius-radius-inputs, 4px)", // Small button radius from measures.css
     "button-large": "var(--measure-border-radius-border-radius-large, 8px)", // Large button radius from measures.css
