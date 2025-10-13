@@ -958,5 +958,17 @@ module.exports = {
       "var(--measure-border-radius-border-radius-radius-inputs, 4px)", // Small button radius from measures.css
     "button-large": "var(--measure-border-radius-border-radius-large, 8px)", // Large button radius from measures.css
   },
+  height: {
+    // Button heights using CSS variables from measures.css
+    "button-small": "var(--measure-dimension-scale-800, 32px)", // h-8 equivalent
+    "button-medium": "var(--measure-dimension-scale-900, 40px)", // h-10 equivalent
+    "button-large": "calc(var(--measure-dimension-scale-600, 24px) * 2)", // h-12 equivalent (24px * 2 = 48px)
+  },
+  padding: {
+    // Button paddings using CSS variables from measures.css
+    "button-small": "var(--measure-dimension-scale-300, 12px)", // px-3 equivalent
+    "button-medium": "var(--measure-dimension-scale-400, 16px)", // px-4 equivalent
+    "button-large": "var(--measure-dimension-scale-600, 24px)", // px-6 equivalent
+  },
   boxShadow: {},
 };
