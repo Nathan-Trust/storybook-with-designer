@@ -25,15 +25,44 @@ const Button = ({
   variant = "Solid",
   onClick,
 }: ButtonProps) => {
-  // Get size-specific classes using CSS variables from measures.css
-  const getSizeClasses = () => {
+  // Get size-specific styles using CSS variables from measures.css
+  const getSizeStyles = () => {
     switch (size) {
       case 1:
-        return "h-button-small px-button-small rounded-button-small typography-body-xsmall-md";
+        return {
+          height: "var(--measure-dimension-scale-800, 32px)",
+          paddingLeft: "var(--measure-dimension-scale-300, 12px)",
+          paddingRight: "var(--measure-dimension-scale-300, 12px)",
+          borderRadius:
+            "var(--measure-border-radius-border-radius-radius-inputs, 4px)",
+        };
       case 3:
-        return "h-button-large px-button-large rounded-button-large typography-body-medium-md";
+        return {
+          height: "calc(var(--measure-dimension-scale-600, 24px) * 2)",
+          paddingLeft: "var(--measure-dimension-scale-600, 24px)",
+          paddingRight: "var(--measure-dimension-scale-600, 24px)",
+          borderRadius: "var(--measure-border-radius-border-radius-large, 8px)",
+        };
       default: // size 2
-        return "h-button-medium px-button-medium rounded-button typography-body-sm-md";
+        return {
+          height: "var(--measure-dimension-scale-900, 40px)",
+          paddingLeft: "var(--measure-dimension-scale-400, 16px)",
+          paddingRight: "var(--measure-dimension-scale-400, 16px)",
+          borderRadius:
+            "var(--measure-border-radius-border-radius-radius-button, 6px)",
+        };
+    }
+  };
+
+  // Get typography classes based on size
+  const getTypographyClass = () => {
+    switch (size) {
+      case 1:
+        return "typography-body-xsmall-md";
+      case 3:
+        return "typography-body-medium-md";
+      default: // size 2
+        return "typography-body-sm-md";
     }
   };
 
@@ -92,10 +121,11 @@ const Button = ({
   const baseClasses =
     "inline-flex items-center justify-center gap-2 font-medium leading-none border outline-none transition-all duration-200 ease-in-out cursor-pointer focus-visible:outline-2 focus-visible:outline-brand-default focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:translate-y-0.5";
 
-  const buttonClasses = `${baseClasses} ${getSizeClasses()} ${getColorVariantClasses()}`;
+  const buttonClasses = `${baseClasses} ${getTypographyClass()} ${getColorVariantClasses()}`;
+  const sizeStyles = getSizeStyles();
 
   return (
-    <button className={buttonClasses} onClick={onClick}>
+    <button className={buttonClasses} style={sizeStyles} onClick={onClick}>
       {showLeadingIcon && leadingIcon && (
         <span className="flex items-center flex-shrink-0 mr-2">
           {leadingIcon}
