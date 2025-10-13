@@ -192,7 +192,7 @@
     --color-brand-6: #b2deb6; 
     --color-brand-7: #94ce9a; 
     --color-brand-8: #67b973; 
-    --color-brand-default: #0090ff; 
+    --color-brand-default: #f76b15; 
     --color-brand-10: #3d9a4f; 
     --color-brand-11: #297e3b; 
     --color-brand-12: #213c24; 
@@ -605,7 +605,7 @@
     --color-info-info-alpha-12: #003463; 
     --color-text-headings: #1e1f24; 
     --color-text-body: #62636c; 
-    --color-text-action: #0090ff; 
+    --color-text-action: #f76b15; 
     --color-text-action-hover: #3d9a4f; 
     --color-text-disabled: #b9bbc6; 
     --color-text-information: #0090ff; 
@@ -616,7 +616,7 @@
     --color-icon-strong: #1e1f24; 
     --color-surface-page: #ffffff; 
     --color-surface-primary: #fcfcfd; 
-    --color-surface-action: #0090ff; 
+    --color-surface-action: #f76b15; 
     --color-surface-action-alpha: #008619b9; 
     --color-surface-action-hover: #3d9a4f; 
     --color-surface-action-alpha-hover: #007a18c2; 
@@ -629,7 +629,7 @@
     --color-surface-disabled: #eff0f3; 
     --color-surface-disabled-alpha: #00104010; 
     --color-icon-soft: #62636c; 
-    --color-icon-action: #0090ff; 
+    --color-icon-action: #f76b15; 
     --color-icon-action-hover: #3d9a4f; 
     --color-icon-disabled: #b9bbc6; 
     --color-icon-information: #0090ff; 
@@ -652,7 +652,7 @@
     --color-border-strong: #b9bbc6; 
     --color-border-error-2: #f5a9a5; 
     --color-border-success-2: #94ce9a; 
-    --color-button-icon-default: #0090ff; 
+    --color-button-icon-default: #f76b15; 
     --color-button-icon-default-on-hover-alpha: #007a18c2; 
     --color-button-icon-default-on-hover: #3d9a4f; 
     --color-button-icon-error: #e5484d; 
@@ -662,7 +662,7 @@
     --color-button-icon-default-alpha: #008619b9; 
     --color-button-icon-error-on-hover: #d73840; 
     --color-button-icon-success: #46a758; 
-    --color-button-default: #0090ff; 
+    --color-button-default: #f76b15; 
     --color-button-default-alpha: #008619b9; 
     --color-button-icon-neutral: #8b8d98; 
     --color-button-icon-neutral-on-hover: #80828d; 
@@ -681,12 +681,12 @@
     --color-components-nav-items-icon-color: #1e1f24; 
     --color-components-tab-tab-trigger-background-active-hover: #00991a0a; 
     --color-components-radio-cards-background-default: #ffffff; 
-    --color-components-sidebar-item-icon-active: #0090ff; 
+    --color-components-sidebar-item-icon-active: #f76b15; 
     --color-components-product-card-background-surface: #ffffff; 
     --color-components-badge-success-background-success-solid: #46a758; 
     --color-components-inputs-background-default-surface: #00005506; 
     --color-components-footer-background-surface: #ffffff; 
-    --color-components-button-button-icon-background-primary-solid: #0090ff; 
+    --color-components-button-button-icon-background-primary-solid: #f76b15; 
     --color-components-nav-items-text-color: #1e1f24; 
     --color-components-cart-button-neutral-border-neutral: #00063332; 
     --color-components-cart-button-neutral-text-neutral: #62636c; 
@@ -696,17 +696,17 @@
     --color-components-tab-tab-trigger-text-default: #62636c; 
     --color-components-tab-tab-trigger-text-default-hover: #1e1f24; 
     --color-components-tab-tab-trigger-text-active: #213c24; 
-    --color-components-tab-tab-trigger-color-selector: #0090ff; 
+    --color-components-tab-tab-trigger-color-selector: #f76b15; 
     --color-components-sidebar-item-icon-inactive: #62636c; 
     --color-components-sidebar-item-text-color: #62636c; 
     --color-components-radio-cards-background-active: #ffffff; 
     --color-components-radio-cards-text-default: #1e1f24; 
     --color-components-radio-cards-text-active: #1e1f24; 
     --color-components-radio-cards-border-default: #00073527; 
-    --color-components-radio-cards-border-active: #0090ff; 
+    --color-components-radio-cards-border-active: #f76b15; 
     --color-components-product-card-heading-text: #1e1f24; 
     --color-components-product-card-body-text: #62636c; 
-    --color-components-product-card-price-text: #0090ff; 
+    --color-components-product-card-price-text: #f76b15; 
     --color-components-modal-header-text: #1e1f24; 
     --color-components-modal-body-text: #62636c; 
     --color-components-modal-icon-color: #62636c; 
@@ -718,7 +718,7 @@
     --color-components-badge-success-icon-success-brand: #297e3b; 
     --color-components-footer-text-navitems: #1e1f24; 
     --color-components-footer-text-label: #62636c; 
-    --color-components-button-brand-background-brand-solid: #0090ff; 
+    --color-components-button-brand-background-brand-solid: #f76b15; 
     --color-components-button-brand-color-text-solid: #ffffff; 
     --color-components-button-brand-border-brand-outline: #b9bbc6; 
     --color-components-button-brand-color-text-outline: #62636c; 
@@ -740,7 +740,7 @@
     --color-components-inputs-background-active-outline: #ffffff; 
     --color-components-button-button-icon-background-primary-soft: #e8f7e9; 
     --color-components-button-button-icon-background-primary-surface: #00991a0a; 
-    --color-components-button-button-icon-on-hover-background-primary-solid: #0090ff; 
+    --color-components-button-button-icon-on-hover-background-primary-solid: #f76b15; 
     --color-components-button-button-icon-on-hover-background-primary-soft: #e8f7e9; 
     --color-components-button-button-icon-on-hover-background-primary-surface: #00991a0a; 
     --color-components-badge-success-border-success-outline: #008a1498; 
@@ -756,8 +756,8 @@
     --color-components-inputs-input-line: #1e1f24; 
     --color-components-inputs-label: #1e1f24; 
     --color-components-button-brand-icon-brand-solid: #ffffff; 
-    --color-components-button-brand-icon-brand-outline: #0090ff; 
-    --color-components-button-brand-icon-brand-ghost: #0090ff; 
+    --color-components-button-brand-icon-brand-outline: #f76b15; 
+    --color-components-button-brand-icon-brand-ghost: #f76b15; 
     --color-components-button-accent-background-accent-solid: #f76b15; 
     --color-components-button-accent-color-text-solid: #ffffff; 
     --color-components-button-accent-border-accent-outline: #b9bbc6; 
@@ -801,7 +801,7 @@
     --color-components-cart-button-primary-surface-primary: #00c00004; 
     --color-components-cart-button-primary-border-primary: #018b0f6b; 
     --color-components-cart-button-primary-text-primary: #297e3b; 
-    --color-components-cart-button-primary-icon-primary: #0090ff; 
+    --color-components-cart-button-primary-icon-primary: #f76b15; 
     --color-components-cart-button-primary-surface-counter-primary: #00a70c17; 
     --color-components-badge-error-background-error-solid: #e5484d; 
     --color-components-badge-error-background-error-soft: #ff0d0015; 
