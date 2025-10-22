@@ -718,7 +718,7 @@
     --color-components-badge-success-icon-success-brand: #297e3b; 
     --color-components-footer-text-navitems: #1e1f24; 
     --color-components-footer-text-label: #62636c; 
-    --color-components-button-brand-background-brand-solid: #46a758; 
+    --color-components-button-brand-background-brand-solid: #0090ff; 
     --color-components-button-brand-color-text-solid: #ffffff; 
     --color-components-button-brand-border-brand-outline: #b9bbc6; 
     --color-components-button-brand-color-text-outline: #62636c; 
@@ -830,5 +830,5 @@
     --color-components-badge-neutral-icon-neutral-brand: #62636c; 
     --color-components-badge-neutral-border-neutral-outline: #00083046; 
     --color-components-badge-neutral-border-neutral-surface: #00063332; 
-    --color-components-topbar-background: #b2d6ff; 
+    --color-components-topbar-background: #b6e150; 
 }
