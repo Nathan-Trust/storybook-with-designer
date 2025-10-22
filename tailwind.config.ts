@@ -16,17 +16,23 @@ const config: Config = {
       colors: {
         ...tailwindVariables.colors,
       },
+      boxShadow: {
+        ...tailwindVariables.boxShadow,
+      },
+      spacing: {
+        ...tailwindVariables.spacing,
+      },
       borderRadius: {
         ...tailwindVariables.borderRadius,
       },
-      height: {
-        ...tailwindVariables.height,
+      fontSize: {
+        ...tailwindVariables.fontSize,
       },
-      padding: {
-        ...tailwindVariables.padding,
+      lineHeight: {
+        ...tailwindVariables.lineHeight,
       },
-      boxShadow: {
-        ...tailwindVariables.boxShadow,
+      borderWidth: {
+        ...tailwindVariables.borderWidth,
       },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
