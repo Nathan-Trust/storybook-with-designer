@@ -35,7 +35,7 @@ const Demo = () => {
           </div>
 
           {/* Product Feed */}
-          <div className="flex flex-col gap-[32px] md:gap-[64px] items-center p-[10px_16px] md:p-[10px_24px] w-full">
+          <div className="flex flex-col gap-[32px] md:gap-[64px] items-center py-[10px] px-400 md:px-500 w-full">
             {/* Product Cards */}
             <ProductCard
               variant="basic"

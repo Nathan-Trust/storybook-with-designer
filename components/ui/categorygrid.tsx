@@ -110,7 +110,7 @@ const CategoryGrid = ({ className }: { className?: string }) => {
   return (
     <div className={className}>
       <div className="bg-components-product-card-background-surface border-b border-gray-3 py-500 px-400 md:px-500">
-        <div className="flex gap-400 items-center overflow-x-auto w-full [-webkit-overflow-scrolling:touch]">
+        <div className="flex gap-400 items-center overflow-x-auto w-full">
           {categories.map((category, index) => (
             <CategoryCard
               key={index}
