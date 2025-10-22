@@ -194,6 +194,9 @@ module.exports = {
       },
     },
     components: {
+      topbar: {
+        background: "var(--color-components-topbar-background)",
+      },
       cart: {
         button: {
           neutral: {
@@ -404,6 +407,7 @@ module.exports = {
             },
           },
         },
+
         button: {
           icon: {
             outline: {

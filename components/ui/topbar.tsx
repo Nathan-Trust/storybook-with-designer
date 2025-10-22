@@ -10,7 +10,7 @@ interface TopBarProps {
 const TopBar = ({ className, property1 = "Web" }: TopBarProps) => {
   return (
     <div
-      className={`${className} bg-neutral-accent-green py-200 px-400 md:px-800`}
+      className={`${className} bg-components-topbar-background py-200 px-400 md:px-800`}
     >
       <div className="flex items-center justify-between max-w-[1464px] w-full mx-auto">
         <div className="flex gap-[20px] items-center">
