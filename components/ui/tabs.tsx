@@ -12,69 +12,24 @@ const Tabs = ({ className }: TabsProps) => {
 
   const tabs = ["Discover", "Following", "Final Call", "New Sales"];
 
-  const containerStyles = {
-    height: "32px",
-    width: "100%",
-    maxWidth: "774px",
-    position: "relative" as const,
-    overflow: "hidden",
-  };
-
-  const underlineStyles = {
-    position: "absolute" as const,
-    bottom: 0,
-    left: 0,
-    right: 0,
-    height: "1px",
-    backgroundColor: "var(--components-tab-outline, rgba(0, 7, 53, 0.15))",
-  };
-
-  const tabTriggerStyles = (isActive: boolean) => ({
-    flex: "1",
-    minWidth: "120px",
-    height: "32px",
-    padding: "0 var(--spacing-1, 4px)",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    position: "relative" as const,
-    cursor: "pointer",
-  });
-
-  const activeIndicatorStyles = {
-    position: "absolute" as const,
-    bottom: 0,
-    left: 0,
-    right: "-0.5px",
-    height: "2px",
-    backgroundColor:
-      "var(--components-tab-tab-trigger-color-selector, #46a758)",
-  };
-
-  const tabContentStyles = (isActive: boolean) => ({
-    padding: "var(--spacing-1, 4px)",
-    borderRadius: "var(--radius-1, 3px)",
-    height: "20px",
-    display: "flex",
-    alignItems: "center",
-    justifyContent: "center",
-    gap: "var(--spacing-2, 8px)",
-  });
-
   return (
-    <div className={className} style={containerStyles}>
-      <div style={underlineStyles}></div>
+    <div
+      className={`${className} relative h-8 w-full max-w-full md:max-w-[774px] overflow-hidden`}
+    >
+      <div className="bg-components-tab-outline absolute bottom-0 left-0 right-0 h-px"></div>
       <div className="flex h-full items-center">
-        {tabs.map((tab, index) => (
+        {tabs.map((tab) => (
           <div
             key={tab}
-            style={tabTriggerStyles(activeTab === tab)}
+            className="flex-1 min-w-[80px] md:min-w-[120px] h-8 px-100 flex items-center justify-center relative cursor-pointer"
             onClick={() => setActiveTab(tab)}
           >
-            {activeTab === tab && <div style={activeIndicatorStyles}></div>}
-            <div style={tabContentStyles(activeTab === tab)}>
+            {activeTab === tab && (
+              <div className="bg-components-tab-tab-trigger-color-selector absolute bottom-0 left-0 right-[-0.5px] h-[2px]"></div>
+            )}
+            <div className="p-100 rounded-radius-1 h-5 flex items-center justify-center gap-100">
               <p
-                className={`typography-body-xsmall-md ${
+                className={`typography-body-xsmall-md whitespace-nowrap ${
                   activeTab === tab
                     ? "text-components-tab-tab-trigger-text-active"
                     : "text-components-tab-tab-trigger-text-default"

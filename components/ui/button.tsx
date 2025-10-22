@@ -25,32 +25,15 @@ const Button = ({
   variant = "Solid",
   onClick,
 }: ButtonProps) => {
-  // Get size-specific styles using CSS variables from measures.css
-  const getSizeStyles = () => {
+  // Get size-specific classes using your exact spacing tokens
+  const getSizeClasses = () => {
     switch (size) {
       case 1:
-        return {
-          height: "var(--measure-dimension-scale-800, 32px)",
-          paddingLeft: "var(--measure-dimension-scale-300, 12px)",
-          paddingRight: "var(--measure-dimension-scale-300, 12px)",
-          borderRadius:
-            "var(--measure-border-radius-border-radius-medium, 4px)",
-        };
+        return "h-800 px-300 rounded-medium"; // scale-800 = 32px, scale-300 = 12px
       case 3:
-        return {
-          height: "calc(var(--measure-dimension-scale-600, 24px) * 2)",
-          paddingLeft: "var(--measure-dimension-scale-600, 24px)",
-          paddingRight: "var(--measure-dimension-scale-600, 24px)",
-          borderRadius:
-            "var(--measure-border-radius-border-radius-radius-button, 6px)",
-        };
+        return "h-1200 px-600 rounded-radius-button"; // scale-600 * 2 = 48px, scale-600 = 24px
       default: // size 2
-        return {
-          height: "var(--measure-dimension-scale-900, 40px)",
-          paddingLeft: "var(--measure-dimension-scale-400, 16px)",
-          paddingRight: "var(--measure-dimension-scale-400, 16px)",
-          borderRadius: "var(--measure-border-radius-border-radius-large, 8px)",
-        };
+        return "h-900 px-400 rounded-large"; // scale-900 = 40px, scale-400 = 16px
     }
   };
 
@@ -58,15 +41,15 @@ const Button = ({
   const getTypographyClass = () => {
     switch (size) {
       case 1:
-        return "typography-body-xsmall-md";
+        return "text-paragraph-xs leading-paragraph-xs font-medium";
       case 3:
-        return "typography-body-medium-md";
+        return "text-paragraph-md leading-paragraph-md font-medium";
       default: // size 2
-        return "typography-body-sm-md";
+        return "text-paragraph-sm leading-paragraph-sm font-medium";
     }
   };
 
-  // Get color and variant specific classes using Supernova component button tokens
+  // Get color and variant specific classes
   const getColorVariantClasses = () => {
     const colorKey = color.toLowerCase();
 
@@ -74,85 +57,94 @@ const Button = ({
       case "Solid":
         switch (colorKey) {
           case "brand":
-            return (
-              "text-white border border-transparent hover:opacity-90 active:opacity-80" +
-              " bg-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
           case "accent":
-            return "bg-components-button-accent-background-accent-solid text-components-button-accent-color-text-solid border-components-button-accent-background-accent-solid hover:bg-orange-10 hover:border-orange-10";
+            return "bg-accent-default text-components-button-accent-color-text-solid border border-transparent hover:bg-accent-7 active:bg-accent-8";
           case "error":
-            return "bg-components-button-error-background-error-solid text-components-button-error-color-text-solid border-components-button-error-background-error-solid hover:bg-red-10 hover:border-red-10";
+            return "bg-error-default text-components-button-error-color-text-solid border border-transparent hover:bg-error-7 active:bg-error-8";
           case "neutral":
-            return "bg-components-button-neutral-background-neutral-solid text-components-button-neutral-color-text-solid border-components-button-neutral-background-neutral-solid hover:bg-gray-10 hover:border-gray-10";
+            return "bg-neutral-default text-components-button-neutral-color-text-solid border border-transparent hover:bg-neutral-7 active:bg-neutral-8";
           default:
-            return (
-              "text-white border border-transparent hover:opacity-90 active:opacity-80" +
-              " bg-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
         }
 
       case "Outline":
         switch (colorKey) {
           case "brand":
-            return (
-              "bg-transparent border hover:bg-[var(--color-green-3,#e8f7e9)]" +
-              " text-[var(--color-green-default,#46a758)] border-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-transparent border border-brand-default text-brand-default hover:bg-brand-1";
           case "accent":
-            return "bg-components-button-accent-background-accent-outline text-components-button-accent-color-text-outline border-components-button-accent-border-accent-outline hover:bg-orange-3 hover:text-orange-11";
+            return "bg-transparent border border-accent-default text-accent-default hover:bg-accent-1";
           case "error":
-            return "bg-components-button-error-background-error-outline text-components-button-error-color-text-outline border-components-button-error-border-error-outline hover:bg-red-3 hover:text-red-11";
+            return "bg-transparent border border-error-default text-error-default hover:bg-error-1";
           case "neutral":
-            return "bg-components-button-neutral-background-neutral-outline text-components-button-neutral-color-text-outline border-components-button-neutral-border-neutral-outline hover:bg-gray-3 hover:text-gray-11";
+            return "bg-transparent border border-neutral-default text-neutral-default hover:bg-neutral-1";
           default:
-            return (
-              "bg-transparent border hover:bg-[var(--color-green-3,#e8f7e9)]" +
-              " text-[var(--color-green-default,#46a758)] border-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-transparent border border-brand-default text-brand-default hover:bg-brand-1";
         }
 
       case "Ghost":
         switch (colorKey) {
           case "brand":
-            return (
-              "bg-transparent border-transparent hover:bg-[var(--color-green-3,#e8f7e9)]" +
-              " text-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-transparent border border-transparent text-brand-default hover:bg-brand-1";
           case "accent":
-            return "bg-components-button-accent-background-accent-ghost text-components-button-accent-color-text-ghost border-transparent hover:bg-orange-3 hover:text-orange-11";
+            return "bg-transparent border border-transparent text-accent-default hover:bg-accent-1";
           case "error":
-            return "bg-components-button-error-background-error-ghost text-components-button-error-color-text-ghost border-transparent hover:bg-red-3 hover:text-red-11";
+            return "bg-transparent border border-transparent text-error-default hover:bg-error-1";
           case "neutral":
-            return "bg-components-button-neutral-background-neutral-outline text-components-button-neutral-color-text-ghost border-transparent hover:bg-gray-3 hover:text-gray-11";
+            return "bg-transparent border border-transparent text-neutral-default hover:bg-neutral-1";
           default:
-            return (
-              "bg-transparent border-transparent hover:bg-[var(--color-green-3,#e8f7e9)]" +
-              " text-[var(--color-green-default,#46a758)]"
-            );
+            return "bg-transparent border border-transparent text-brand-default hover:bg-brand-1";
         }
 
       default:
-        return (
-          "text-white border border-transparent hover:opacity-90 active:opacity-80" +
-          " bg-[var(--color-green-default,#46a758)]"
-        );
+        return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
+    }
+  };
+
+  // Get icon color based on variant and color
+  const getIconColor = () => {
+    const colorKey = color.toLowerCase();
+
+    if (variant === "Solid") {
+      return "text-platform-white";
+    }
+
+    switch (colorKey) {
+      case "brand":
+        return "text-brand-default";
+      case "accent":
+        return "text-accent-default";
+      case "error":
+        return "text-error-default";
+      case "neutral":
+        return "text-neutral-default";
+      default:
+        return "text-brand-default";
     }
   };
 
   const baseClasses =
-    "inline-flex items-center justify-center gap-2 font-medium leading-none border outline-none transition-all duration-200 ease-in-out cursor-pointer focus-visible:outline-2 focus-visible:outline-[var(--color-green-default,#46a758)] focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:translate-y-0.5";
+    "inline-flex items-center justify-center gap-200 font-medium leading-none border outline-none transition-all duration-200 ease-in-out cursor-pointer focus-visible:outline-2 focus-visible:outline-offset-2 disabled:opacity-50 disabled:cursor-not-allowed active:translate-y-0.5";
 
-  const buttonClasses = `${baseClasses} ${getTypographyClass()} ${getColorVariantClasses()}`;
-  const sizeStyles = getSizeStyles();
+  const sizeClasses = getSizeClasses();
+  const typographyClass = getTypographyClass();
+  const colorVariantClasses = getColorVariantClasses();
+  const iconColorClass = getIconColor();
+
+  const buttonClasses = `${baseClasses} ${sizeClasses} ${typographyClass} ${colorVariantClasses}`;
 
   return (
-    <button className={buttonClasses} style={sizeStyles} onClick={onClick}>
+    <button className={buttonClasses} onClick={onClick}>
       {showLeadingIcon && leadingIcon && (
-        <span className="flex items-center flex-shrink-0">{leadingIcon}</span>
+        <span className={`flex items-center flex-shrink-0 ${iconColorClass}`}>
+          {leadingIcon}
+        </span>
       )}
       <span className="whitespace-nowrap">{button}</span>
       {showTrailingIcon && trailingIcon && (
-        <span className="flex items-center flex-shrink-0">{trailingIcon}</span>
+        <span className={`flex items-center flex-shrink-0 ${iconColorClass}`}>
+          {trailingIcon}
+        </span>
       )}
     </button>
   );
