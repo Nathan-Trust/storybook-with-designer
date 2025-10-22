@@ -1,5 +1,5 @@
 import type { Config } from "tailwindcss";
-const tailwindVariables = require("./tailwind-variables.js");
+const tailwindVariables = require("./configured-tailwind-variables.js");
 
 const config: Config = {
   content: [
