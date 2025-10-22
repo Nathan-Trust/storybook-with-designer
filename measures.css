@@ -73,17 +73,17 @@
     --measure-space-margin-lg: 8px;     
     --measure-space-margin-xl: 12px;     
     --measure-border-radius-border-radius-medium-2: 6px;     
-    --measure-border-radius-border-radius-radius-button: 6px;     
+    --measure-border-radius-border-radius-radius-button: 0px;     
     --measure-border-radius-border-radius-radius-inputs: 4px;     
     --measure-border-radius-border-radius-radius-inputs-large: 6px;     
     --measure-border-radius-border-radius-radius-product-cards: 8px;     
     --measure-border-radius-border-radius-radius-modals: 8px;     
     --measure-border-radius-border-radius-radius-avatars: 6px;     
-    --measure-border-radius-border-radius-radius-badges: 4px;     
-    --measure-border-radius-border-radius-radius-callouts: 6px;     
+    --measure-border-radius-border-radius-2-extra-large: 32px;     
+    --measure-border-radius-border-radius-radius-badges: 32px;     
+    --measure-border-radius-border-radius-radius-callouts: 10px;     
     --measure-border-radius-border-radius-radius-review-cards: 0px;     
     --measure-space-padding-xxl: 16px;     
     --measure-space-gap-2xl: 16px;     
     --measure-space-gap-3xl: 20px;     
-    --measure-border-radius-border-radius-2-extra-large: 32px;     
 }
