@@ -29,11 +29,11 @@ const Button = ({
   const getSizeClasses = () => {
     switch (size) {
       case 1:
-        return "h-800 px-300 rounded-medium"; // scale-800 = 32px, scale-300 = 12px
+        return "h-800 px-300 rounded-radius-inputs"; // scale-800 = 32px, scale-300 = 12px
       case 3:
-        return "h-1200 px-600 rounded-radius-button"; // scale-600 * 2 = 48px, scale-600 = 24px
+        return "h-1200 px-600 rounded-radius-button"; // scale-1200 = 48px, scale-600 = 24px
       default: // size 2
-        return "h-900 px-400 rounded-large"; // scale-900 = 40px, scale-400 = 16px
+        return "h-900 px-400 rounded-radius-inputs-large"; // scale-900 = 40px, scale-400 = 16px
     }
   };
 
@@ -49,7 +49,7 @@ const Button = ({
     }
   };
 
-  // Get color and variant specific classes
+  // Get color and variant specific classes using components.button tokens
   const getColorVariantClasses = () => {
     const colorKey = color.toLowerCase();
 
@@ -57,69 +57,96 @@ const Button = ({
       case "Solid":
         switch (colorKey) {
           case "brand":
-            return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
+            return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border border-transparent hover:bg-brand-7 active:bg-brand-8";
           case "accent":
-            return "bg-accent-default text-components-button-accent-color-text-solid border border-transparent hover:bg-accent-7 active:bg-accent-8";
+            return "bg-components-button-accent-background-accent-solid text-components-button-accent-color-text-solid border border-transparent hover:bg-accent-7 active:bg-accent-8";
           case "error":
-            return "bg-error-default text-components-button-error-color-text-solid border border-transparent hover:bg-error-7 active:bg-error-8";
+            return "bg-components-button-error-background-error-solid text-components-button-error-color-text-solid border border-transparent hover:bg-error-7 active:bg-error-8";
           case "neutral":
-            return "bg-neutral-default text-components-button-neutral-color-text-solid border border-transparent hover:bg-neutral-7 active:bg-neutral-8";
+            return "bg-components-button-neutral-background-neutral-solid text-components-button-neutral-color-text-solid border border-transparent hover:bg-neutral-7 active:bg-neutral-8";
           default:
-            return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
+            return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border border-transparent hover:bg-brand-7 active:bg-brand-8";
         }
 
       case "Outline":
         switch (colorKey) {
           case "brand":
-            return "bg-transparent border border-brand-default text-brand-default hover:bg-brand-1";
+            return "bg-transparent border border-components-button-brand-border-brand-outline text-components-button-brand-color-text-outline hover:bg-brand-1";
           case "accent":
-            return "bg-transparent border border-accent-default text-accent-default hover:bg-accent-1";
+            return "bg-transparent border border-components-button-accent-border-accent-outline text-components-button-accent-color-text-outline hover:bg-accent-1";
           case "error":
-            return "bg-transparent border border-error-default text-error-default hover:bg-error-1";
+            return "bg-transparent border border-components-button-error-border-error-outline text-components-button-error-color-text-outline hover:bg-error-1";
           case "neutral":
-            return "bg-transparent border border-neutral-default text-neutral-default hover:bg-neutral-1";
+            return "bg-transparent border border-components-button-neutral-border-neutral-outline text-components-button-neutral-color-text-outline hover:bg-neutral-1";
           default:
-            return "bg-transparent border border-brand-default text-brand-default hover:bg-brand-1";
+            return "bg-transparent border border-components-button-brand-border-brand-outline text-components-button-brand-color-text-outline hover:bg-brand-1";
         }
 
       case "Ghost":
         switch (colorKey) {
           case "brand":
-            return "bg-transparent border border-transparent text-brand-default hover:bg-brand-1";
+            return "bg-components-button-brand-background-brand-ghost border border-transparent text-components-button-brand-color-text-ghost hover:bg-brand-1";
           case "accent":
-            return "bg-transparent border border-transparent text-accent-default hover:bg-accent-1";
+            return "bg-components-button-accent-background-accent-ghost border border-transparent text-components-button-accent-color-text-ghost hover:bg-accent-1";
           case "error":
-            return "bg-transparent border border-transparent text-error-default hover:bg-error-1";
+            return "bg-components-button-error-background-error-ghost border border-transparent text-components-button-error-color-text-ghost hover:bg-error-1";
           case "neutral":
-            return "bg-transparent border border-transparent text-neutral-default hover:bg-neutral-1";
+            return "bg-transparent border border-transparent text-components-button-neutral-color-text-ghost hover:bg-neutral-1";
           default:
-            return "bg-transparent border border-transparent text-brand-default hover:bg-brand-1";
+            return "bg-components-button-brand-background-brand-ghost border border-transparent text-components-button-brand-color-text-ghost hover:bg-brand-1";
         }
 
       default:
-        return "bg-brand-default text-platform-white border border-transparent hover:bg-brand-7 active:bg-brand-8";
+        return "bg-components-button-brand-background-brand-solid text-components-button-brand-color-text-solid border border-transparent hover:bg-brand-7 active:bg-brand-8";
     }
   };
 
-  // Get icon color based on variant and color
+  // Get icon color based on variant and color using components.button.icon tokens
   const getIconColor = () => {
     const colorKey = color.toLowerCase();
 
-    if (variant === "Solid") {
-      return "text-platform-white";
-    }
-
-    switch (colorKey) {
-      case "brand":
-        return "text-brand-default";
-      case "accent":
-        return "text-accent-default";
-      case "error":
-        return "text-error-default";
-      case "neutral":
-        return "text-neutral-default";
+    switch (variant) {
+      case "Solid":
+        switch (colorKey) {
+          case "brand":
+            return "text-components-button-brand-icon-brand-solid";
+          case "accent":
+            return "text-components-button-accent-icon-accent-solid";
+          case "error":
+            return "text-components-button-error-icon-error-solid";
+          case "neutral":
+            return "text-components-button-neutral-icon-neutral-solid";
+          default:
+            return "text-components-button-brand-icon-brand-solid";
+        }
+      case "Outline":
+        switch (colorKey) {
+          case "brand":
+            return "text-components-button-brand-icon-brand-outline";
+          case "accent":
+            return "text-components-button-accent-icon-accent-outline";
+          case "error":
+            return "text-components-button-error-icon-error-outline";
+          case "neutral":
+            return "text-components-button-neutral-icon-neutral-outline";
+          default:
+            return "text-components-button-brand-icon-brand-outline";
+        }
+      case "Ghost":
+        switch (colorKey) {
+          case "brand":
+            return "text-components-button-brand-icon-brand-ghost";
+          case "accent":
+            return "text-components-button-accent-icon-accent-ghost";
+          case "error":
+            return "text-components-button-error-icon-error-ghost";
+          case "neutral":
+            return "text-components-button-neutral-icon-neutral-ghost";
+          default:
+            return "text-components-button-brand-icon-brand-ghost";
+        }
       default:
-        return "text-brand-default";
+        return "text-components-button-brand-icon-brand-solid";
     }
   };
 
