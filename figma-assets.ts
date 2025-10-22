@@ -36,7 +36,7 @@ export const ICONS = {
   cancelIcon: "/icons/cancel.svg",
 
   // Sidebar icons
-  homeIcon: "/icons/home.svg",
+  homeIcon: "/icons/home-6-fill.svg",
   notificationsIcon: "/icons/notifications.svg",
   ordersIcon: "/icons/orders.svg",
   accountIcon: "/icons/account.svg",

@@ -8,7 +8,10 @@
     "start": "next start",
     "lint": "next lint",
     "storybook": "storybook dev -p 6006",
-    "build-storybook": "storybook build"
+    "build-storybook": "storybook build",
+    "generate:tokens": "node generate-figma-variables.js && node generate-tailwind-variables.js",
+    "generate:figma": "node generate-figma-variables.js",
+    "generate:tailwind": "node generate-tailwind-variables.js"
   },
   "dependencies": {
     "geist": "^1.5.1",

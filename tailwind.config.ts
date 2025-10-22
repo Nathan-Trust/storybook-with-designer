@@ -19,6 +19,21 @@ const config: Config = {
       boxShadow: {
         ...tailwindVariables.boxShadow,
       },
+      spacing: {
+        ...tailwindVariables.spacing,
+      },
+      borderRadius: {
+        ...tailwindVariables.borderRadius,
+      },
+      fontSize: {
+        ...tailwindVariables.fontSize,
+      },
+      lineHeight: {
+        ...tailwindVariables.lineHeight,
+      },
+      borderWidth: {
+        ...tailwindVariables.borderWidth,
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

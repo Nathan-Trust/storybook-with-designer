@@ -12,31 +12,14 @@ interface FooterProps {
 }
 
 const Footer = ({ className }: FooterProps) => {
-  const footerBackgroundStyles = {
-    backgroundColor: "var(--components-footer-background-surface, #ffffff)",
-    padding: "55px var(--spacing-9, 80px)",
-  };
-
-  const footerBottomStyles = {
-    backgroundColor: "var(--components-footer-background-surface, #ffffff)",
-    padding: "35px var(--spacing-9, 80px)",
-  };
-
-  const decorativeBackgroundStyles = {
-    // backgroundColor: "var(--surface-action, #46a758)",
-    height: "241.143px",
-    width: "100%",
-    position: "relative" as const,
-  };
-
   return (
     <div className={className}>
       <div className="flex flex-col items-center w-full">
         {/* Main Footer Content */}
-        <div style={footerBackgroundStyles} className="w-full">
-          <div className="flex items-start justify-between max-w-[1464px] w-full mx-auto">
+        <div className="bg-components-footer-background-surface w-full py-[55px] px-400 md:px-[80px]">
+          <div className="flex flex-col md:flex-row items-start justify-between max-w-[1464px] w-full mx-auto gap-600 md:gap-0">
             {/* Logo and Social Links */}
-            <div className="flex flex-col gap-[20px] items-start">
+            <div className="flex flex-col gap-[20px] items-start footer-column">
               <div className="h-[24px] w-[96.297px] overflow-hidden">
                 <img
                   src={ICONS.logoSvg}
@@ -44,7 +27,6 @@ const Footer = ({ className }: FooterProps) => {
                   className="w-full h-full object-contain"
                   onError={(e) => {
                     e.currentTarget.style.display = "none";
-                    // e.currentTarget.nextElementSibling.style.display = "block";
                   }}
                 />
                 <div className="w-full h-full bg-components-footer-text-navitems opacity-80 hidden"></div>
@@ -67,92 +49,96 @@ const Footer = ({ className }: FooterProps) => {
               </div>
             </div>
 
-            {/* Company Info */}
-            <div className="flex flex-col gap-[20px] items-start w-[101.69px]">
-              <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
-                Company
-              </p>
-              <div className="flex flex-col gap-[16px] items-start w-full">
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  About Us
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Blog
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  FAQs
-                </p>
-              </div>
-            </div>
-
-            {/* Quick Links */}
-            <div className="flex flex-col gap-[20px] items-start w-[108.411px]">
-              <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
-                Quick Links
-              </p>
-              <div className="flex flex-col gap-[16px] items-start w-full">
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  How to Buy
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Become a Seller
-                </p>
-              </div>
-            </div>
-
-            {/* Categories */}
-            <div className="flex flex-col gap-[20px] items-start w-[131.026px]">
-              <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
-                Categories
-              </p>
-              <div className="flex flex-col gap-[16px] items-start w-full">
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Grains
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Tubers
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Baking Items
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Fresh Foods
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Beverage
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Sea Food
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Livestock
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  Fruits
-                </p>
-              </div>
-            </div>
-
-            {/* Contact Info */}
-            <div className="flex flex-col gap-[20px] items-start w-[275.73px]">
-              <div className="flex flex-col gap-[20px] items-start w-full">
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-600 flex-1">
+              {/* Company Info */}
+              <div className="flex flex-col gap-[20px] items-start w-full md:w-[101.69px]">
                 <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
-                  contact us
+                  Company
                 </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  help@boifiok.ng
-                </p>
-                <p className="typography-body-small text-components-footer-text-navitems">
-                  +234 913 557 2245
-                </p>
-                <div className="flex flex-col gap-[4px] items-start w-full">
-                  <p className="typography-body-small text-components-footer-text-navitems font-medium w-[275.73px]">
-                    Plot 6, Unit C, Ewet Housing Estate, Uyo Nigeria
+                <div className="flex flex-col gap-[16px] items-start w-full">
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    About Us
                   </p>
-                  <div className="typography-body-small text-components-footer-text-navitems">
-                    <p className="mb-0">Monday – Friday: 09:00AM – 09:00 PM</p>
-                    <p className="mb-0">Saturday: 09:00AM – 07:00PM</p>
-                    <p>Sunday: Closed</p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Blog
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    FAQs
+                  </p>
+                </div>
+              </div>
+
+              {/* Quick Links */}
+              <div className="flex flex-col gap-[20px] items-start w-full md:w-[108.411px]">
+                <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
+                  Quick Links
+                </p>
+                <div className="flex flex-col gap-[16px] items-start w-full">
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    How to Buy
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Become a Seller
+                  </p>
+                </div>
+              </div>
+
+              {/* Categories */}
+              <div className="flex flex-col gap-[20px] items-start w-full md:w-[131.026px]">
+                <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
+                  Categories
+                </p>
+                <div className="flex flex-col gap-[16px] items-start w-full">
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Grains
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Tubers
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Baking Items
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Fresh Foods
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Beverage
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Sea Food
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Livestock
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    Fruits
+                  </p>
+                </div>
+              </div>
+
+              {/* Contact Info */}
+              <div className="flex flex-col gap-[20px] items-start w-full md:w-[275.73px]">
+                <div className="flex flex-col gap-[20px] items-start w-full">
+                  <p className="typography-body-xsmall-md text-components-footer-text-label uppercase">
+                    contact us
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    help@boifiok.ng
+                  </p>
+                  <p className="typography-body-small text-components-footer-text-navitems">
+                    +234 913 557 2245
+                  </p>
+                  <div className="flex flex-col gap-[4px] items-start w-full">
+                    <p className="typography-body-small text-components-footer-text-navitems font-medium w-full">
+                      Plot 6, Unit C, Ewet Housing Estate, Uyo Nigeria
+                    </p>
+                    <div className="typography-body-small text-components-footer-text-navitems">
+                      <p className="mb-0">
+                        Monday – Friday: 09:00AM – 09:00 PM
+                      </p>
+                      <p className="mb-0">Saturday: 09:00AM – 07:00PM</p>
+                      <p>Sunday: Closed</p>
+                    </div>
                   </div>
                 </div>
               </div>
@@ -163,20 +149,20 @@ const Footer = ({ className }: FooterProps) => {
         {/* Decorative Background */}
         <div
           style={{
-            ...decorativeBackgroundStyles,
             backgroundImage: `url(${IMAGES.footerBackground})`,
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
+          className="h-[83px] md:h-[241.143px] w-full relative"
         >
           {/* Decorative footer background pattern from Figma */}
         </div>
 
         {/* Footer Bottom */}
-        <div style={footerBottomStyles} className="w-full">
+        <div className="bg-components-footer-background-surface w-full py-[35px] px-400 md:px-[80px]">
           <div className="flex flex-col gap-[10px] items-center max-w-[1464px] w-full mx-auto">
-            <div className="flex h-[28.625px] items-center justify-between w-full">
+            <div className="flex flex-col md:flex-row h-auto md:h-[28.625px] items-start md:items-center justify-between w-full gap-400 md:gap-0">
               <p className="typography-body-small text-components-footer-text-label">
                 2025 Boifiok.ng. All rights reserved.
               </p>
